@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Saddique - Web & Graphic Designer</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External stylesheet for cleaner HTML -->
+</head>
+<style>
+    /* Global Styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    /* Header Styles */
+    header {
+        background: linear-gradient(135deg, #0073e6, #00aaff);
+        color: white;
+        padding: 60px 20px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        animation: fadeIn 2s ease forwards;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+
+    header p {
+        font-size: 1.2em;
+        font-weight: 300;
+    }
+
+    /* Navigation Styles */
+    nav {
+        background-color: #333;
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        color: white;
+        padding: 15px 25px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 500;
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    }
+
+    nav a:hover {
+        background-color: #575757;
+        color: #f4f4f9;
+        transform: translateY(-3px);
+    }
+
+    /* Container Styles */
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    /* Section Styles */
+    .section {
+        margin-bottom: 40px;
+        padding: 30px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 1s ease forwards;
+    }
+
+
+    .section h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        color: #0073e6;
+        border-bottom: 2px solid #0073e6;
+        padding-bottom: 10px;
+    }
+
+    p {
+        margin-bottom: 1.5em;
+        font-size: 1.1em;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    ul li {
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    /* Form Styles */
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 0.5em;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 1em;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        font-size: 1em;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+        border-color: #0073e6;
+        box-shadow: 0 0 5px rgba(0, 115, 230, 0.5);
+    }
+
+    input[type="submit"] {
+        background-color: #0073e6;
+        color: white;
+        border: none;
+        padding: 15px 25px;
+        text-transform: uppercase;
+        cursor: pointer;
+        border-radius: 6px;
+        font-size: 1em;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+        transform: translateY(-2px);
+    }
+
+    /* Footer Styles */
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: linear-gradient(135deg, #0073e6, #00aaff);
+        color: white;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        nav a {
+            display: block;
+            padding: 10px;
+        }
+
+        .section {
+            padding: 20px;
+        }
+    }
+
+    /* Keyframes */
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+<body>
+    <header>
+        <h1>Muhammad Saddique</h1>
+        <p>Web Developer & Graphic Designer</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="home" class="section">
+            <h2>Home</h2>
+            <p>Welcome to my personal webpage! I am Muhammad Saddique, a passionate web and graphic designer. Explore my work and get to know more about me.</p>
+        </section>
+        <section id="portfolio" class="section">
+            <h2>Portfolio</h2>
+            <p>Here are some of my recent projects:</p>
+            <ul>
+                <li><strong>Project 1:</strong> Website redesign for a local business. <a href="https://msaddique2010.github.io/Digital-Agency-Website/index.html" target="_blank">(Website)</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/msaddique2010/Digital-Agency-Website" target="_blank">(Code)</a></li>
+                <li><strong>Project 2:</strong> AI tools research platform. <a href="https://msaddique2010.github.io/zen-of-ai/index.html" target="_blank">(Website)</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://github.com/msaddique2010/zen-of-ai" target="_blank">(Code)</a> </li>
+                <li><strong>Project 3:</strong> Logo Designs. <a href="https://drive.google.com/drive/u/2/folders/1m56Wz4SP-5cZMSeHJ2HKWTcIC9pHBrUK" target="_blank">(Link)</a></li>
+            </ul>
+        </section>
+        <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>
+        I’m Muhammad Saddique, a passionate web and graphic designer with a strong interest in technology and creativity. I completed my matriculation with a science (biology) background and then pursued a 3-month Web Designing diploma from the Fauji Foundation Institute of Technology before continuing my studies in ICS (Intermediate in Computer Science).
+    </p>
+    <p>
+        I specialize in HTML, CSS, Tailwind CSS, Bootstrap, Figma, Adobe Illustrator, and basic GitHub. I enjoy crafting modern, responsive websites and designing professional logos that blend aesthetics with purpose.
+    </p>
+    <p>
+        I'm deeply interested in coding and love to experiment with different technologies. Whether it's designing user interfaces or writing clean code, I’m always exploring new ways to improve and grow in the tech world.
+    </p>
+</section>
+
+
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <p>
+                You can reach out to me directly through the details below:
+                <br><br>
+                <strong>Email:</strong>saddiquem2010@gmail.com<br>
+                <strong>Phone:</strong>+92-327-9970708<br>
+                <strong>Location:</strong> Bakshupura, Gujrat
+            </p>
+        
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Muhammad Saddique. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
